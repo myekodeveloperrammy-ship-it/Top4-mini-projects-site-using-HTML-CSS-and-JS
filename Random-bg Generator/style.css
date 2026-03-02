@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Dank Mono";
+  font-weight: 300;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: #fff;
+  align-items: center;
+  gap: 20px;
+  width: 30%;
+  border-radius: 10px;
+}
+
+.container button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid hsl(251, 23%, 15%);
+  background-color: transparent;
+  color: hsl(251, 23%, 15%);
+  border-radius: 5px;
+  box-shadow: 5px 5px hsl(251, 23%, 15%);
+  transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.container button:active {
+  box-shadow: none;
+}
+
+@media (max-width: 574px) {
+  .container {
+    width: 80%;
+  }
+}

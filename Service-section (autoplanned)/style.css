@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --base-original: #0d0c22;
+  --base-text: hsl(234, 48%, 100%);
+}
+
+body {
+  background-color: var(--base-original);
+  color: var(--base-text);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section .intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section code {
+  background-color: #444;
+  padding: 6px;
+  border-radius: 20px;
+  /* font-family: "ibm plex mono"; */
+  color: rgb(184, 89, 42);
+}
+
+section img {
+  width: 70px;
+  height: 70px;
+  /* margin-top: -30px; */
+  /* border: 1px solid hsl(243, 48%, 20%); */
+  /* background-color: hsl(243, 48%, 18%); */
+  /* border-radius: 20px; */
+}
+
+article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+article .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 10px;
+  background-color: hsl(243, 48%, 10%);
+  border: 1px solid hsl(243, 48%, 18%);
+  border-radius: 20px;
+  /* width: 200px; */
+}
+.skills {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  height: 5px;
+  background-color: hsl(243, 48%, 12%);
+  position: relative;
+  border-radius: 10px;
+}
+
+.progress-out {
+  border-radius: 10px;
+  background-color: hsl(243, 48%, 30%);
+  animation: run 0.3s linear infinite;
+
+  /* additional features */
+  box-shadow: 0 0 16px hsl(243, 48%, 30%);
+}
+
+@keyframes run {
+  0% {
+    width: 0%;
+
+    /* additional features */
+    /* background-color: red; */
+    /* box-shadow: 0 0 16px red; */
+  }
+  50% {
+    width: 50%;
+
+    /* additional features */
+    /* background-color: blue; */
+    /* box-shadow: 0 0 16px blue; */
+  }
+  60% {
+    width: 100%;
+  }
+  70% {
+    width: 100%;
+  }
+  80% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+
+    /* additional features */
+    background-color: hsl(243, 48%, 30%);
+  }
+}
+
+del {
+  color: hsl(243, 48%, 18%);
+}
+
+.grid-col-span2 {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  padding: 10px 20px;
+  background-color: hsl(243, 48%, 18%);
+  border: 1px solid hsl(243, 48%, 30%);
+  color: hsl(234, 48%, 100%);
+  border-radius: 10px;
+  font-family: inherit;
+}
